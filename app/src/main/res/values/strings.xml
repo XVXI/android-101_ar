@@ -1,0 +1,278 @@
+<resources>
+    <string name="wikitude_license_key">oP+t8IoHwehB5RLIeZh/2UiFD/3+32OHPoUIgB6K7povuaG0zRqPDLrOvlSg3D9N+C4uLHZMLj0o5wNGPzn30FAbs7LVniJL22B3rDmyhzySQ3T7kNIsGhR2jbdRd7dFl09u6l69jF0gQUbZbbrE0ri8yl7ncNerAJoctvgrim1TYWx0ZWRfX3pZ+rgTEqWlECoK+Fd6mi11LT57sy5lOMXHf6op7cTcnYD5zxbxdJvMgjhBUpiIYPvrwEgLfC+gtnd9E4Wp/cY+pQPwvHCRVUA7uUgQsRENNKyL9m1aNf3fv00CepINw9OpApl97WEusqY3+Y2iz/KSnnF3H5Rp+wdcAV7DvdNtjtcH4f/TfYBF6VB76534Nxp/cbXPfjZVIRTMn1N9oGnW+0+Y8nwDYabMrxVpCxHXaszK5i3AUfy2whAE9fRhZiR4jd0QmnXLtfwGW2qnBOJK3gME5UYeq+eg5lYDrBL1oIS6Fib45MIdDpLXUpxpDIf57o7l3SroEh8iYQhY4AXl8jmdLGWmdLo6n8vRWSY0alil8akvT61uDZC26gukC8nXPiCvBrXoocZQjwd++/sVr8rJBXKf00O+WxCnChk4uQft4ormvz7bFofJuunynfQVbp7KqN8eM5S5q+ViIfhmRNwJjGWOz3/1JDL7LTFaPk+Rovq3nmbqFCpCO9qm2paGqcqtWJfMV4jVd8ieCJ3PxG6Hjo33TF3GxX8r/kIVog7Qp1aC/w4W+5EVIItKESVIrg/mNHcB6jGs50/4NL2LKILosfC3Czd8+uracuHNVZyj+RxA1kHIPsuY9y6EJrUGCecUHlgy</string>
+
+    <string name="setting_language">Current Language EN</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoia2VuamltZWxvZHkiLCJhIjoiY2pjaDlpZnJvMmhkeDJ3dWpmMXJhMm1lcCJ9.jT_sO3E6iEK7X7eGc3rdZQ</string>
+    <string name="google_maps_key">AIzaSyBZNKYOsNoHCdxZoxPBXHzDbnu-rz_CxYc</string>
+    <string name="google_youtube_key">AIzaSyCZYS9lhpCO8vCVQpe9vpS3ZXXCqBw5j0o</string>
+
+    <string name="appplication_name">Smart 101</string>
+    <string name="facebook_app_id">190219905552334</string>
+    <string name="fb_login_protocol_scheme">fb190219905552334</string>
+
+    <string name="username_text">User</string>
+    <string name="selectplace_text">Please select a city.</string>
+    <string name="logout_text">Log out</string>
+
+    <string name="sp_text">&lt;</string>
+    <string name="sp_text1">&gt;</string>
+
+    <string name="ok_text">OK</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="save_text">Save</string>
+
+    <string name="need_login_text">Please login before booking</string>
+    <string name="need_login_fav_text">Please Login</string>
+
+    <string name="confirm_queue_title_text">Booking confirmation</string>
+    <!--<string name="confirm_queue_message_text">คุณแน่ใจว่าต้องการจองใช้บริการตอนนี้\nเมื่อจองแล้วไม่สามารถยกเลิกได้</string>-->
+    <string name="confirm_queue_message_text">Are you sure you want to book the service.</string>
+
+    <string name="guest_show_text">Guest</string>
+
+    <string name="comment_title">Comment</string>
+    <string name="comment_name">User</string>
+    <string name="comment_rate">Rating</string>
+    <string name="comment_message">Comment</string>
+    <string name="all_comment_text">All Comments</string>
+
+    <string name="rating_text">Average Rate</string>
+
+    <string name="special_1">*</string>
+
+    <string name="text_cancel_queue_alert">notifications</string>
+    <string name="text_cancel_queue">Do you want to cancel your reservation queue</string>
+
+    <string name="text_edit_queue">Booking confirmation</string>
+    <string name="text_edit_queue_text">Change the time to</string>
+
+    <string name="alert_backpress">Press once again to exit!</string>
+
+    <!--    main menu-->
+    <string name="main_menu_start_app_text">Get started</string>
+    <string name="main_menu_register_text">Register</string>
+    <string name="main_menu_login_text">Login</string>
+    <string name="main_menu_or_text">or</string>
+    <string name="main_menu_guest_text">Trial as a visitor</string>
+
+    <!--    login-->
+    <string name="login_login_text">Login</string>
+    <string name="login_err_text_fill_email">Please enter email</string>
+    <string name="login_err_text_fill_password">โปรดกรอกรหัสผ่าน</string>
+    <string name="ligin_email_text_hint">Email</string>
+    <string name="login_password_text_hint">Password</string>
+    <string name="login_promblem">Encountered a login problem</string>
+    <string name="login_forgotpassword_text">Forgot password</string>
+
+    <!--    forgot-->
+    <string name="forgot_forgotpassword_text">Forgot password</string>
+    <string name="forgot_err_text_fill_email">Please enter email</string>
+    <string name="forgot_forgotpassword_desc">System will send a new password via Email.</string>
+    <string name="forgot_email_text_hint">Email</string>
+    <string name="forgot_forgotpassword_button_text">Receive password via email</string>
+    <string name="forgot_forgotpassword_desc2">Password has been sent. Please check your email.</string>
+
+    <!--    register-->
+    <string name="register_register_text">Register</string>
+    <string name="register_err_city_text">Please select a city.</string>
+    <string name="register_err_pass_l_text">Password must be 4 characters or more.</string>
+    <string name="register_err_pass_m_text">Passwords do not match.</string>
+    <string name="register_err_name_text">Please enter name</string>
+    <string name="register_err_lname_text">Please enter a last name</string>
+    <string name="register_err_email_text">Please enter email</string>
+    <string name="register_err_pass_text">โปรดกรอกรหัสผ่าน</string>
+    <string name="register_err_accept_text">Please accept the terms of use.</string>
+    <string name="register_name_text">Name</string>
+    <string name="register_lastname_text">Surname</string>
+    <string name="register_account_text">User</string>
+    <string name="register_email_text">Email</string>
+    <string name="register_password_text">Password</string>
+    <string name="register_repassword_text">Confirm password</string>
+    <string name="register_term_text">Accept the terms of service</string>
+
+    <!--    policy-->
+    <string name="policy_policy_text">เงื่อนไขการให้บริการ</string>
+
+    <!--    home-->
+    <string name="home_emergency">Emergency notification</string>
+    <string name="home_complain">Appeal</string>
+    <string name="home_hotline">Hot line</string>
+    <string name="home_news">News</string>
+    <string name="home_article">Article</string>
+    <string name="home_cctv">CCTV</string>
+    <string name="home_reward">Awards received</string>
+    <string name="home_youtube">YOUTUBE</string>
+    <string name="home_ar">AR</string>
+    <string name="home_help">Help</string>
+    <string name="home_travel">Travel</string>
+    <string name="home_otop">OTOP products</string>
+    <string name="home_sratong">Smart Sratong</string>
+    <string name="home_store">Manage store</string>
+
+    <!--    ar-->
+    <string name="error_loading_ar_experience">Could not load AR experience.</string>
+    <string name="device_missing_features">Device missing features</string>
+    <string name="permissions_denied">Smart 101 needs the following permissions to enable an AR experience:</string>
+    <string name="permission_rationale_text">Smart 101 needs the following permissions to enable an AR experience:</string>
+    <string name="permission_rationale_title">Smart 101 Permissions</string>
+
+    <!--    cctv-->
+    <string name="cctv_text_list">List</string>
+    <string name="cctv_text_map">Map</string>
+
+    <!--    account view-->
+    <string name="account_text_name">Name :&#160;</string>
+    <string name="account_text_lname">Surname :&#160;</string>
+    <string name="account_text_c_code">Identity Card :&#160;</string>
+    <string name="account_text_email">Email :&#160;</string>
+    <string name="account_text_tel">Phone number :&#160;</string>
+    <string name="account_text_province">Province :&#160;</string>
+    <string name="account_text_aumper">District :&#160;</string>
+    <string name="account_text_tambon">Sub District :&#160;</string>
+    <string name="account_text_address">Address :&#160;</string>
+    <string name="account_text_zip">Postal code :&#160;</string>
+    <string name="account_text_setting">Setting</string>
+    <string name="account_text_about">About us</string>
+    <string name="account_text_signout">Log out</string>
+
+    <!--    emergency-->
+    <string name="emergency_emergency_text">Emergency notification</string>
+    <string name="emergency_you_emergency_text">Your emergency</string>
+    <string name="emergency_select_emergency_type">Select the notification type.</string>
+    <string name="emergency_emergency_detail_hint">*Event details</string>
+    <string name="emergency_emergency_name_hint">*Name of Notifier</string>
+    <string name="emergency_emergency_tel_hint">*Phone number</string>
+    <string name="emergency_emergency_event_photo">Event photo</string>
+    <string name="emergency_emergency_pin_location">Pin / Place the scene</string>
+    <string name="emergency_emergency_event_location">Crime scene</string>
+    <string name="emergency_emergency_input_type">Please select the type of report</string>
+    <string name="emergency_emergency_input_detail">Please enter event details</string>
+    <string name="emergency_emergency_input_name">Sender Name</string>
+    <string name="emergency_emergency_input_tel">Please enter your telephone number</string>
+    <string name="emergency_emergency_type_1">Emergency patient</string>
+    <string name="emergency_emergency_type_2">Electric leakage</string>
+    <string name="emergency_emergency_type_3">A fire</string>
+    <string name="emergency_emergency_type_4">Explosion</string>
+    <string name="emergency_emergency_type_5">Accident</string>
+    <string name="emergency_emergency_type_6">Crime</string>
+    <string name="emergency_emergency_type_text">Incident type</string>
+    <string name="emergency_emergency_location_text">Incident location</string>
+    <string name="emergency_emergency_pin">Pin</string>
+    <string name="emergency_emergency_send_success">Report success</string>
+    <string name="emergency_emergency_location_hint_text">*Incident location</string>
+
+    <!--    complain-->
+    <string name="complain_complain_text">Report a complaint</string>
+    <string name="complain_you_complain_text">Your complaint</string>
+    <string name="complain_select_complain_type">Select complaint type</string>
+    <string name="complain_complain_detail_hint">*Event details</string>
+    <string name="complain_complain_name_hint">*Name of Notifier</string>
+    <string name="complain_complain_tel_hint">*Phone number</string>
+    <string name="complain_complain_event_photo">Event photo</string>
+    <string name="complain_complain_pin_location">Pin / Place the scene</string>
+    <string name="complain_complain_event_location">Crime scene</string>
+    <string name="complain_complain_input_type">Please select the type of complaint</string>
+    <string name="complain_complain_input_detail">Please enter event details</string>
+    <string name="complain_complain_input_name">Sender Name</string>
+    <string name="complain_complain_input_tel">Please enter your telephone number</string>
+    <string name="complain_complain_type_1">Power outage</string>
+    <string name="complain_complain_type_2">Tap water does not flow</string>
+    <string name="complain_complain_type_3">Notify pedestrian repair</string>
+    <string name="complain_complain_type_4">Notify road repairs</string>
+    <string name="complain_complain_type_5">Complaint about pipe caps</string>
+    <string name="complain_complain_type_6">Garbage has not been collected</string>
+    <string name="complain_complain_type_7">Received an unsatisfactory service</string>
+    <string name="complain_complain_type_8">Found inappropriate behavior of officials</string>
+    <string name="complain_complain_type_9">Other</string>
+    <string name="complain_complain_type_text">Types of complaints</string>
+    <string name="complain_complain_location_text">Incident location</string>
+    <string name="complain_complain_pin">Pin</string>
+    <string name="complain_complain_send_success">complaints success</string>
+    <string name="complain_complain_location_hint_text">*Incident location</string>
+
+    <!--    common-->
+    <string name="coomon_text_details">Details</string>
+    <string name="coomon_status_details">Status</string>
+    <string name="common_select_lang">Choose language</string>
+
+    <!--    callphone dialog-->
+    <string name="callphone_dialog_header">Phone</string>
+    <string name="callphone_dialog_contract_to">Want to contact...</string>
+
+    <!--    news-->
+    <string name="news_news_text_noimage">No picture</string>
+    <string name="news_news_text_date">Date : </string>
+    <string name="news_news_text_group">Category : </string>
+    <string name="news_news_text_readmore">Read more</string>
+    <string name="news_news_text_docs">Document</string>
+    <string name="news_news_text_services_lo">View service points</string>
+
+    <!--    setting-->
+    <string name="setting_setting_header1">Profile settings</string>
+    <string name="setting_setting_header2">Password Setting</string>
+    <string name="setting_setting_header3">Language setting</string>
+    <string name="setting_setting_lang">language</string>
+    <string name="setting_setting_privacy0">Privacy</string>
+    <string name="setting_setting_privacy">Privacy Policy</string>
+
+    <!--    edit account-->
+    <string name="edit_acc_error1">กรุณาใส่รหัสประชาชน 13 หลัก</string>
+    <string name="edit_acc_error2">ใส่เมือง</string>
+    <string name="edit_acc_error3">ใส่อำเภอ</string>
+    <string name="edit_acc_error4">ใส่ตำบล</string>
+    <string name="edit_acc_error5">ใส่ชื่อ</string>
+    <string name="edit_acc_error6">ใส่นามสกุล</string>
+    <string name="edit_acc_error7">ใส่รหัสบัตรประชาชน</string>
+    <string name="edit_acc_error8">ใส่เบอร์โทรศัพท์</string>
+    <string name="edit_acc_error9">ใส่ที่อยู่</string>
+    <string name="edit_acc_error10">ใส่รหัสไปรษณีย์</string>
+    <string name="edit_acc_editimage">แก้ไขรูปภาพ</string>
+    <string name="edit_acc_clearimage">เคลียร์</string>
+    <string name="edit_acc_c_code">Identity Card</string>
+    <string name="edit_acc_tel">Phone number</string>
+    <string name="edit_acc_province">Province</string>
+    <string name="edit_acc_amper">District</string>
+    <string name="edit_acc_tambon">Sub District</string>
+    <string name="edit_acc_address">Address</string>
+    <string name="edit_acc_zip">Postal code</string>
+
+    <!--    travel page-->
+    <string name="travel_string_plan">Plan</string>
+    <string name="travel_string_place">Place</string>
+    <string name="travel_string_fplan">Favorite Plan</string>
+    <string name="travel_string_fplace">Favorite Place</string>
+    <string name="travel_string_t1">Roi Et City tourism</string>
+    <string name="travel_string_t2">choose a date and travel plan. you want</string>
+    <string name="travel_string_landmark">Landmarks that you have conquered</string>
+
+    <!--    store pade-->
+    <string name="store_string_sell_week">Top seller this week</string>
+    <string name="store_string_pop_week">Popula this week</string>
+    <string name="store_string_last">The latest</string>
+    <string name="store_string_watch_store">View store</string>
+    <string name="store_string_product_list">Product List</string>
+    <string name="store_string_store_contract">Want to contact the store</string>
+
+    <string name="text_home_activity_header">Roiet City</string>
+
+    <string name="text_ar_view">Number of people who scan AR</string>
+
+    <string name="hint_comment">Please comment</string>
+
+    <!--    change password-->
+    <string name="change_password_email">Email</string>
+    <string name="change_password_o_pass">Old-password</string>
+    <string name="change_password_n_pass">New-password</string>
+    <string name="change_password_c_pass">Confirm new password</string>
+    <string name="change_password_change">Change password</string>
+
+    <string name="open_date">Opening day</string>
+
+    <string name="emer_red_text">Please fill in the actual information. Sending false information is guilty according to the Computer Act.</string>
+    <string name="complain_red_text">Please fill in the actual information. Sending false information is guilty according to the Computer Act.</string>
+
+    <string name="common_text_emer_code">Ermergency Code</string>
+    <string name="common_text_complain_code">Complain Code</string>
+
+    <string name="register_success">Membership registration is complete You can enter the Smart101 application to get started</string>
+</resources>

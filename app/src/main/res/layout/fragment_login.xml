@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ooo_bg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/appbar_main2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/login_login_text"
+                android:textSize="@dimen/text_header_size"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/icon_101_login_header" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corner_textbox_bg" />
+
+                <com.transcode.smartcity101p2.view.KanitTextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <com.transcode.smartcity101p2.view.KanitEditTextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:hint="@string/ligin_email_text_hint"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/text_normal_size" />
+
+                </com.transcode.smartcity101p2.view.KanitTextInputLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corner_textbox_bg" />
+
+                <com.transcode.smartcity101p2.view.KanitTextInputLayout
+                    android:id="@+id/inputLayoutPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <com.transcode.smartcity101p2.view.KanitEditTextView
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:hint="@string/login_password_text_hint"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/text_normal_size" />
+
+                </com.transcode.smartcity101p2.view.KanitTextInputLayout>
+            </FrameLayout>
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner_bg_dark_purple"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/login_login_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:textStyle="bold" />
+
+            <com.transcode.smartcity101p2.view.SukhumvitTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/login_promblem"
+                android:textColor="@color/white" />
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:id="@+id/forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_bg_purple"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/login_forgotpassword_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/icon_logo_tc_new" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

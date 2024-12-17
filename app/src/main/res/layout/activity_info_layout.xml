@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar_main2" />
+
+    <LinearLayout
+        android:id="@+id/update_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner_textbox_bg_gray_tran"
+        android:padding="5dp">
+
+        <com.transcode.smartcity101p2.view.KanitTextBoldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ข้อมูลส่วนตัว"
+            android:textColor="@color/brow"
+            android:textSize="@dimen/text_header_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner_textbox_bg_gray_tran"
+        android:padding="5dp">
+
+        <com.transcode.smartcity101p2.view.KanitTextBoldView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="เปลี่ยนรหัสผ่าน"
+            android:textColor="@color/brow"
+            android:textSize="@dimen/text_header_size" />
+    </LinearLayout>
+
+</LinearLayout>

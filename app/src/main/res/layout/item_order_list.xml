@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date : "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/item_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code : "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/item_order_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </LinearLayout>
+
+    <com.transcode.smartcity101p2.view.KanitTextView
+        android:id="@+id/item_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="shop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal_size" />
+
+    <LinearLayout
+        android:id="@+id/item_layout_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_layout_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/item_map"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/market_icon_map" />
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/item_status"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rounded_corner_bg_market_dark_purple"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/market_icon_tel"
+            android:text="Status"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_layout_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/item_deliver_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:id="@+id/item_all_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#0f5c3b"
+                android:textSize="@dimen/text_header_size" />
+        </LinearLayout>
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/item_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_bg_market_purple"
+            android:padding="5dp"
+            android:text="Confirm goods received"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

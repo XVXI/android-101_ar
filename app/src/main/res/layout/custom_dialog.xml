@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_textbox_bg"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/dl_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/dl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold" />
+
+        <com.transcode.smartcity101p2.view.SukhumvitTextView
+            android:id="@+id/dl_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/dl_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_button_bg_darkblue"
+                android:gravity="center"
+                android:text="@string/ok_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/dl_center"
+                android:layout_width="10dp"
+                android:layout_height="1px" />
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/dl_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_button_bg_darkred"
+                android:gravity="center"
+                android:text="@string/cancel_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

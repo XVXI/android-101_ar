@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner_bg_white"
+        android:gravity="center"
+        >
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/text_telno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tel."
+            android:textColor="@color/purple"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corner_bg_white"
+            />
+    </LinearLayout>
+
+</FrameLayout>

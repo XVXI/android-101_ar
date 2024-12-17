@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="350dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_bg_news_green"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Comfirm goods received"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dl_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/market_ic_close" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/market_dark_green"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Date : "
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/dl_order_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Code : "
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/dl_order_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dl_layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/dl_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="80dp"
+                        android:textColor="@color/black" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text=">>>"
+                        android:textColor="@color/black" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/dl_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="5"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/market_dark_green"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/dl_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/dl_deliver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Total"
+                            android:textColor="@color/white" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/dl_total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_header_size" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <com.transcode.smartcity101p2.view.KanitEditTextView
+                    android:id="@+id/dl_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_corner_textbox_bg4"
+                    android:gravity="top|left"
+                    android:hint="Comment"
+                    android:minLines="3"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <RatingBar
+                        android:id="@+id/dl_rating"
+                        style="@style/MyRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="0.0"
+                        android:stepSize="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/dl_cancel"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded_corner_button_bg_red3"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="ยกเลิก"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/dl_ok"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_corner_bg_text_market_green2"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="ยืนยัน"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
+

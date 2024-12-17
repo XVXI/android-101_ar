@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="common_border_color">#A28C87</color>
+    <color name="blue">#1962E0</color>
+    <color name="blue2">#3266cc</color>
+    <color name="white">#ffffff</color>
+    <color name="pink">#F160F1</color>
+    <color name="black">#000000</color>
+    <color name="orange">#ff4c00</color>
+    <color name="red">#ff4c00</color>
+    <color name="red2">#f17f53</color>
+    <color name="darkblue">#000066</color>
+    <color name="lightblue">#57CCEB</color>
+    <color name="lightblue_tran">#800099ff</color>
+    <color name="darkred">#963735</color>
+    <color name="gray">#95a6b8</color>
+    <color name="gray_tran">#80c9c9c9</color>
+    <color name="gray2">#c9c9c9</color>
+    <color name="brow">#C07642</color>
+    <color name="black_tran">#80000000</color>
+
+    <color name="bg_color">#4C4F53</color>
+
+    <color name="n_blue2">#779fe2</color>
+
+    <color name="new_orange">#f38503</color>
+
+    <color name="light_green">#b8dadb</color>
+    <color name="emergency_complain_green">#acd8da</color>
+
+    <color name="green">#29496a</color>
+    <color name="green2">#659465</color>
+
+    <!--new-->
+    <color name="dark_green_new">#145572</color>
+    <color name="light_green_new">#7dc8d5</color>
+    <color name="brown_new">#666666</color>
+
+    <color name="news_header_bg">#7dc8d5</color>
+    <color name="news_header_sub_bg">#56a9bc</color>
+
+    <!--    market-->
+    <color name="market_green">#50a06f</color>
+    <color name="market_dark_green">#29593d</color>
+    <color name="market_yellow_bg">#f2f4dc</color>
+    <color name="market_light_green">#6db45a</color>
+    <color name="market_pink">#f46260</color>
+    <color name="market_red">#7c1623</color>
+    <color name="market_red_delete">#e83042</color>
+
+    <!--    101-->
+    <color name="dark_purple">#3e1938</color>
+    <color name="purple">#723b71</color>
+    <color name="orose">#f44c5c</color>
+    <color name="emergency_complain_purple">#99723b71</color>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_textbox_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/frameImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/rounded_corner_textbox_bg_half"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/photos_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:padding="5dp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="2dp"
+                app:tabPaddingStart="2dp" />
+        </LinearLayout>
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/no_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/news_news_text_noimage"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news_news_text_date"
+                android:textColor="#0271c2"
+                android:textSize="@dimen/text_small_size" />
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/text_date_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0271c2"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/news_news_text_group"
+                android:textColor="#0271c2"
+                android:textSize="@dimen/text_small_size" />
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/text_gene_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0271c2"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <com.transcode.smartcity101p2.view.SukhumvitTextView
+            android:id="@+id/continue_reade"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/news_news_text_readmore"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

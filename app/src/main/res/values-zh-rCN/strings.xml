@@ -1,0 +1,278 @@
+<resources>
+    <string name="wikitude_license_key">oP+t8IoHwehB5RLIeZh/2UiFD/3+32OHPoUIgB6K7povuaG0zRqPDLrOvlSg3D9N+C4uLHZMLj0o5wNGPzn30FAbs7LVniJL22B3rDmyhzySQ3T7kNIsGhR2jbdRd7dFl09u6l69jF0gQUbZbbrE0ri8yl7ncNerAJoctvgrim1TYWx0ZWRfX3pZ+rgTEqWlECoK+Fd6mi11LT57sy5lOMXHf6op7cTcnYD5zxbxdJvMgjhBUpiIYPvrwEgLfC+gtnd9E4Wp/cY+pQPwvHCRVUA7uUgQsRENNKyL9m1aNf3fv00CepINw9OpApl97WEusqY3+Y2iz/KSnnF3H5Rp+wdcAV7DvdNtjtcH4f/TfYBF6VB76534Nxp/cbXPfjZVIRTMn1N9oGnW+0+Y8nwDYabMrxVpCxHXaszK5i3AUfy2whAE9fRhZiR4jd0QmnXLtfwGW2qnBOJK3gME5UYeq+eg5lYDrBL1oIS6Fib45MIdDpLXUpxpDIf57o7l3SroEh8iYQhY4AXl8jmdLGWmdLo6n8vRWSY0alil8akvT61uDZC26gukC8nXPiCvBrXoocZQjwd++/sVr8rJBXKf00O+WxCnChk4uQft4ormvz7bFofJuunynfQVbp7KqN8eM5S5q+ViIfhmRNwJjGWOz3/1JDL7LTFaPk+Rovq3nmbqFCpCO9qm2paGqcqtWJfMV4jVd8ieCJ3PxG6Hjo33TF3GxX8r/kIVog7Qp1aC/w4W+5EVIItKESVIrg/mNHcB6jGs50/4NL2LKILosfC3Czd8+uracuHNVZyj+RxA1kHIPsuY9y6EJrUGCecUHlgy</string>
+
+    <string name="setting_language">ภาษาปัจจุบัน ภาษาไทย</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoia2VuamltZWxvZHkiLCJhIjoiY2pjaDlpZnJvMmhkeDJ3dWpmMXJhMm1lcCJ9.jT_sO3E6iEK7X7eGc3rdZQ</string>
+    <string name="google_maps_key">AIzaSyBZNKYOsNoHCdxZoxPBXHzDbnu-rz_CxYc</string>
+    <string name="google_youtube_key">AIzaSyCZYS9lhpCO8vCVQpe9vpS3ZXXCqBw5j0o</string>
+
+    <string name="appplication_name">Smart 101</string>
+    <string name="facebook_app_id">190219905552334</string>
+    <string name="fb_login_protocol_scheme">fb190219905552334</string>
+
+    <string name="username_text">用户名</string>
+    <string name="selectplace_text">请选择一个城市。</string>
+    <string name="logout_text">登出</string>
+
+    <string name="sp_text">&lt;</string>
+    <string name="sp_text1">&gt;</string>
+
+    <string name="ok_text">好啦</string>
+    <string name="cancel_text">取消</string>
+    <string name="save_text">保存到</string>
+
+    <string name="need_login_text">预订前，请先登录</string>
+    <string name="need_login_fav_text">Please Login</string>
+
+    <string name="confirm_queue_title_text">订舱确认</string>
+    <!--<string name="confirm_queue_message_text">คุณแน่ใจว่าต้องการจองใช้บริการตอนนี้\nเมื่อจองแล้วไม่สามารถยกเลิกได้</string>-->
+    <string name="confirm_queue_message_text">你确定你想要预订服务。</string>
+
+    <string name="guest_show_text">Guest</string>
+
+    <string name="comment_title">留言</string>
+    <string name="comment_name">用户名</string>
+    <string name="comment_rate">满足感</string>
+    <string name="comment_message">你的评论</string>
+    <string name="all_comment_text">全部评论</string>
+
+    <string name="rating_text">平均满意度</string>
+
+    <string name="special_1">*</string>
+
+    <string name="text_cancel_queue_alert">通知</string>
+    <string name="text_cancel_queue">你想取消预订队列。</string>
+
+    <string name="text_edit_queue">订舱确认</string>
+    <string name="text_edit_queue_text">更改时间</string>
+
+    <string name="alert_backpress">Press once again to exit!</string>
+
+    <!--    main menu-->
+    <string name="main_menu_start_app_text">开始吧</string>
+    <string name="main_menu_register_text">注册</string>
+    <string name="main_menu_login_text">登入</string>
+    <string name="main_menu_or_text">或</string>
+    <string name="main_menu_guest_text">访客试用</string>
+
+    <!--    login-->
+    <string name="login_login_text">登入</string>
+    <string name="login_err_text_fill_email">请输入电子邮件</string>
+    <string name="login_err_text_fill_password">โปรดกรอกรหัสผ่าน</string>
+    <string name="ligin_email_text_hint">电邮</string>
+    <string name="login_password_text_hint">密码</string>
+    <string name="login_promblem">遇到登录问题</string>
+    <string name="login_forgotpassword_text">忘记密码</string>
+
+    <!--    forgot-->
+    <string name="forgot_forgotpassword_text">忘记密码</string>
+    <string name="forgot_err_text_fill_email">请输入电子邮件</string>
+    <string name="forgot_forgotpassword_desc">系统将通过电子邮件发送新密码。</string>
+    <string name="forgot_email_text_hint">电邮</string>
+    <string name="forgot_forgotpassword_button_text">通过电子邮件接收密码</string>
+    <string name="forgot_forgotpassword_desc2">密码已发送。请检查您的电子邮件。</string>
+
+    <!--    register-->
+    <string name="register_register_text">注册</string>
+    <string name="register_err_city_text">请选择一个城市。</string>
+    <string name="register_err_pass_l_text">密码必须为4个字符或更多。</string>
+    <string name="register_err_pass_m_text">密码不匹配。</string>
+    <string name="register_err_name_text">请输入姓名</string>
+    <string name="register_err_lname_text">请输入姓氏</string>
+    <string name="register_err_email_text">请输入电子邮件</string>
+    <string name="register_err_pass_text">โปรดกรอกรหัสผ่าน</string>
+    <string name="register_err_accept_text">请接受使用条款。</string>
+    <string name="register_name_text">名字</string>
+    <string name="register_lastname_text">姓氏</string>
+    <string name="register_account_text">用户名</string>
+    <string name="register_email_text">电邮</string>
+    <string name="register_password_text">密码</string>
+    <string name="register_repassword_text">确认密码</string>
+    <string name="register_term_text">接受服务条款</string>
+
+    <!--    policy-->
+    <string name="policy_policy_text">เงื่อนไขการให้บริการ</string>
+
+    <!--    home-->
+    <string name="home_emergency">紧急通知</string>
+    <string name="home_complain">投诉</string>
+    <string name="home_hotline">热线电话</string>
+    <string name="home_news">新闻</string>
+    <string name="home_article">文章</string>
+    <string name="home_cctv">CCTV</string>
+    <string name="home_reward">获得的奖项</string>
+    <string name="home_youtube">YOUTUBE</string>
+    <string name="home_ar">AR</string>
+    <string name="home_help">帮忙</string>
+    <string name="home_travel">出差</string>
+    <string name="home_otop">OTOP产品</string>
+    <string name="home_sratong">Smart Sratong</string>
+    <string name="home_store">商店</string>
+
+    <!--    ar-->
+    <string name="error_loading_ar_experience">Could not load AR experience.</string>
+    <string name="device_missing_features">Device missing features</string>
+    <string name="permissions_denied">Smart 101 needs the following permissions to enable an AR experience:</string>
+    <string name="permission_rationale_text">Smart 101 needs the following permissions to enable an AR experience:</string>
+    <string name="permission_rationale_title">Smart 101 Permissions</string>
+
+    <!--    cctv-->
+    <string name="cctv_text_list">清单</string>
+    <string name="cctv_text_map">Map</string>
+
+    <!--    account view-->
+    <string name="account_text_name">名字 :&#160;</string>
+    <string name="account_text_lname">姓氏 :&#160;</string>
+    <string name="account_text_c_code">身份证号码 :&#160;</string>
+    <string name="account_text_email">电邮 :&#160;</string>
+    <string name="account_text_tel">电话号码 :&#160;</string>
+    <string name="account_text_province">省份 :&#160;</string>
+    <string name="account_text_aumper">地区 :&#160;</string>
+    <string name="account_text_tambon">分区 :&#160;</string>
+    <string name="account_text_address">地址 :&#160;</string>
+    <string name="account_text_zip">邮递区号 :&#160;</string>
+    <string name="account_text_setting">环境</string>
+    <string name="account_text_about">关于我们</string>
+    <string name="account_text_signout">登出</string>
+
+    <!--    emergency-->
+    <string name="emergency_emergency_text">紧急通知</string>
+    <string name="emergency_you_emergency_text">您的紧急情况</string>
+    <string name="emergency_select_emergency_type">选择通知类型。</string>
+    <string name="emergency_emergency_detail_hint">*活动详情</string>
+    <string name="emergency_emergency_name_hint">*通知者名称</string>
+    <string name="emergency_emergency_tel_hint">*电话号码</string>
+    <string name="emergency_emergency_event_photo">活动照片</string>
+    <string name="emergency_emergency_pin_location">固定/放置场景</string>
+    <string name="emergency_emergency_event_location">犯罪现场</string>
+    <string name="emergency_emergency_input_type">预订前，请先登录</string>
+    <string name="emergency_emergency_input_detail">请输入事件的详细信息</string>
+    <string name="emergency_emergency_input_name">发件人地址</string>
+    <string name="emergency_emergency_input_tel">请输入您的电话号码</string>
+    <string name="emergency_emergency_type_1">急诊病人</string>
+    <string name="emergency_emergency_type_2">漏电</string>
+    <string name="emergency_emergency_type_3">火</string>
+    <string name="emergency_emergency_type_4">爆炸</string>
+    <string name="emergency_emergency_type_5">意外</string>
+    <string name="emergency_emergency_type_6">犯罪</string>
+    <string name="emergency_emergency_type_text">事件类型</string>
+    <string name="emergency_emergency_location_text">事故地点</string>
+    <string name="emergency_emergency_pin">固定</string>
+    <string name="emergency_emergency_send_success">举报成功</string>
+    <string name="emergency_emergency_location_hint_text">*事故地点</string>
+
+    <!--    complain-->
+    <string name="complain_complain_text">投诉举报</string>
+    <string name="complain_you_complain_text">您的投诉</string>
+    <string name="complain_select_complain_type">选择投诉类型</string>
+    <string name="complain_complain_detail_hint">*活动详情</string>
+    <string name="complain_complain_name_hint">*通知者名称</string>
+    <string name="complain_complain_tel_hint">*电话号码</string>
+    <string name="complain_complain_event_photo">活动照片</string>
+    <string name="complain_complain_pin_location">固定/放置场景</string>
+    <string name="complain_complain_event_location">犯罪现场</string>
+    <string name="complain_complain_input_type">请选择投诉的类型</string>
+    <string name="complain_complain_input_detail">请输入事件的详细信息</string>
+    <string name="complain_complain_input_name">发件人地址</string>
+    <string name="complain_complain_input_tel">请输入您的电话号码</string>
+    <string name="complain_complain_type_1">停电</string>
+    <string name="complain_complain_type_2">自来水不流动</string>
+    <string name="complain_complain_type_3">通知行人维修</string>
+    <string name="complain_complain_type_4">通知修路</string>
+    <string name="complain_complain_type_5">有关管帽的投诉</string>
+    <string name="complain_complain_type_6">垃圾尚未收集。还是存放不好</string>
+    <string name="complain_complain_type_7">收到的服务不满意</string>
+    <string name="complain_complain_type_8">发现官员的不当行为</string>
+    <string name="complain_complain_type_9">其他</string>
+    <string name="complain_complain_type_text">投诉类型</string>
+    <string name="complain_complain_location_text">事故地点</string>
+    <string name="complain_complain_pin">固定</string>
+    <string name="complain_complain_send_success">投诉成功</string>
+    <string name="complain_complain_location_hint_text">*事故地点</string>
+
+    <!--    common-->
+    <string name="coomon_text_details">详细资料</string>
+    <string name="coomon_status_details">现况</string>
+    <string name="common_select_lang">选择语言</string>
+
+    <!--    callphone dialog-->
+    <string name="callphone_dialog_header">电话</string>
+    <string name="callphone_dialog_contract_to">要联系...</string>
+
+    <!--    news-->
+    <string name="news_news_text_noimage">没有图片</string>
+    <string name="news_news_text_date">日期 : </string>
+    <string name="news_news_text_group">类别分类 : </string>
+    <string name="news_news_text_readmore">阅读更多</string>
+    <string name="news_news_text_docs">文件</string>
+    <string name="news_news_text_services_lo">查看服务点</string>
+
+    <!--    setting-->
+    <string name="setting_setting_header1">配置文件设置</string>
+    <string name="setting_setting_header2">密码设定</string>
+    <string name="setting_setting_header3">语言设置</string>
+    <string name="setting_setting_lang">语言</string>
+    <string name="setting_setting_privacy0">隐私</string>
+    <string name="setting_setting_privacy">隐私政策</string>
+
+    <!--    edit account-->
+    <string name="edit_acc_error1">กรุณาใส่รหัสประชาชน 13 หลัก</string>
+    <string name="edit_acc_error2">ใส่เมือง</string>
+    <string name="edit_acc_error3">ใส่อำเภอ</string>
+    <string name="edit_acc_error4">ใส่ตำบล</string>
+    <string name="edit_acc_error5">ใส่ชื่อ</string>
+    <string name="edit_acc_error6">ใส่นามสกุล</string>
+    <string name="edit_acc_error7">ใส่รหัสบัตรประชาชน</string>
+    <string name="edit_acc_error8">ใส่เบอร์โทรศัพท์</string>
+    <string name="edit_acc_error9">ใส่ที่อยู่</string>
+    <string name="edit_acc_error10">ใส่รหัสไปรษณีย์</string>
+    <string name="edit_acc_editimage">แก้ไขรูปภาพ</string>
+    <string name="edit_acc_clearimage">เคลียร์</string>
+    <string name="edit_acc_c_code">身份证号码</string>
+    <string name="edit_acc_tel">电话号码</string>
+    <string name="edit_acc_province">省份</string>
+    <string name="edit_acc_amper">地区</string>
+    <string name="edit_acc_tambon">分区</string>
+    <string name="edit_acc_address">地址</string>
+    <string name="edit_acc_zip">邮递区号</string>
+
+    <!--    travel page-->
+    <string name="travel_string_plan">計劃</string>
+    <string name="travel_string_place">地點</string>
+    <string name="travel_string_fplan">最喜歡的計劃</string>
+    <string name="travel_string_fplace">最喜歡的地方</string>
+    <string name="travel_string_t1">黎逸市旅遊</string>
+    <string name="travel_string_t2">選擇日期和旅行計劃。你要</string>
+    <string name="travel_string_landmark">您已征服的地标</string>
+
+    <!--    store pade-->
+    <string name="store_string_sell_week">本週最暢銷</string>
+    <string name="store_string_pop_week">本周流行</string>
+    <string name="store_string_last">最新的</string>
+    <string name="store_string_watch_store">查看商店</string>
+    <string name="store_string_product_list">店鋪清單</string>
+    <string name="store_string_store_contract">想要聯繫商店</string>
+
+    <string name="text_home_activity_header">黎逸府</string>
+
+    <string name="text_ar_view">掃描AR的人數</string>
+
+    <string name="hint_comment">请发表评论</string>
+
+    <!--    change password-->
+    <string name="change_password_email">电邮</string>
+    <string name="change_password_o_pass">电邮</string>
+    <string name="change_password_n_pass">新密码</string>
+    <string name="change_password_c_pass">确认新密码</string>
+    <string name="change_password_change">修改密码</string>
+
+    <string name="open_date">开幕日</string>
+
+    <string name="emer_red_text">请填写实际信息。根据《计算机法》，发送虚假信息是有罪的。</string>
+    <string name="complain_red_text">请填写实际信息。根据《计算机法》，发送虚假信息是有罪的。</string>
+
+    <string name="common_text_emer_code">紧急代码</string>
+    <string name="common_text_complain_code">投诉代码</string>
+
+    <string name="register_success">会员注册完成 您可以输入Smart 101应用程序。开始</string>
+</resources>

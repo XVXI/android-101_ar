@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_textbox_bg"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon_queue"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter" />
+
+        <com.transcode.smartcity101p2.view.SukhumvitTextView
+            android:id="@+id/title_queue"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal_size" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_queue_round"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY" />
+</FrameLayout>

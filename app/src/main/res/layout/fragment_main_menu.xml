@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ooo_bg1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/menu_setting_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_language"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_101_main_header" />
+
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/main_menu_start_app_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_normal_size" />
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:id="@+id/menu_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_bg_dark_purple"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/main_menu_register_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:textStyle="bold" />
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:id="@+id/menu_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_button_bg_white_new"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/main_menu_login_text"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/text_button_size"
+                android:textStyle="bold" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.transcode.smartcity101p2.view.SukhumvitTextView
+                android:id="@+id/term_and_con_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/setting_setting_privacy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_very_small_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/black" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/main_menu_or_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_header_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/menu_guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_button_bg_brown_new"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/main_menu_guest_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_button_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/icon_logo_tc_new" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/button_change_lang"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp" />
+</FrameLayout>

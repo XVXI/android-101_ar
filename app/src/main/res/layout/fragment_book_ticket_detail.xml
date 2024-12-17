@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_textbox_bg_green"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_corner_textbox_bg"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="กรุณาตรวจสอบข้อมูล"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.SukhumvitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="จองแล้วไม่สามารถยกเลิกได้"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size"
+                            android:visibility="gone" />
+
+                        <com.transcode.smartcity101p2.view.SukhumvitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="กรุณาตรวจสอบความถูกต้องก่อนทำการจอง"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:text="จุดรับบริการ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.mapbox.mapboxsdk.maps.MapView
+                            android:id="@+id/mapview"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            mapbox:mapbox_cameraZoom="13" />
+
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:text="วันที่จองใช้บริการ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/dateSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_header_size"
+                            android:textStyle="bold" />
+
+                        <com.transcode.smartcity101p2.view.SukhumvitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:text="ระบุเวลา"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/selecttime"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="_ _ : _ _"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_header_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.transcode.smartcity101p2.view.KanitTextView
+                    android:id="@+id/bookit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_corner_button_bg_darkblue"
+                    android:gravity="center"
+                    android:text="จองเลย"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_header_size"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

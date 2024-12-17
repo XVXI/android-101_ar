@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/appbar_main2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_travel_header" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="-10dp"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:id="@+id/text_city_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:gravity="center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/dark_purple"
+                                android:textSize="@dimen/text_normal_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="@string/travel_string_t2"
+                            android:textColor="@color/dark_purple"
+                            app:autoSizePresetSizes="@array/autosize_text_small_sizes"
+                            app:autoSizeStepGranularity="2sp"
+                            app:autoSizeTextType="uniform"
+                            tools:ignore="MissingPrefix" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/rounded_corner_bg_gray_travel"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/layout_day_1"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle_white_purple"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.transcode.smartcity101p2.view.KanitTextView
+                                        android:id="@+id/text_day_1_int"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1"
+                                        android:textColor="@color/dark_purple"
+                                        android:textSize="@dimen/text_header_size"
+                                        android:textStyle="bold" />
+
+                                    <com.transcode.smartcity101p2.view.KanitTextView
+                                        android:id="@+id/text_day_1_day"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="day"
+                                        android:textColor="@color/dark_purple"
+                                        android:textSize="@dimen/text_normal_size" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/layout_day_2"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle_white_purple"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.transcode.smartcity101p2.view.KanitTextView
+                                        android:id="@+id/text_day_2_int"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2"
+                                        android:textColor="@color/dark_purple"
+                                        android:textSize="@dimen/text_header_size"
+                                        android:textStyle="bold" />
+
+                                    <com.transcode.smartcity101p2.view.KanitTextView
+                                        android:id="@+id/text_day_2_day"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="days"
+                                        android:textColor="@color/dark_purple"
+                                        android:textSize="@dimen/text_normal_size" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:id="@+id/layout_day_3"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle_white_purple"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.transcode.smartcity101p2.view.KanitTextView
+                                        android:id="@+id/text_day_3_int"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3"
+                                        android:textColor="@color/dark_purple"
+                                        android:textSize="@dimen/text_header_size"
+                                        android:textStyle="bold" />
+
+                                    <com.transcode.smartcity101p2.view.KanitTextView
+                                        android:id="@+id/text_day_3_day"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="days"
+                                        android:textColor="@color/dark_purple"
+                                        android:textSize="@dimen/text_normal_size" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_province"
+        android:layout_width="180dp"
+        android:layout_height="350dp"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/appbar_main2"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_corner_bg_white"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <com.transcode.smartcity101p2.view.KanitTextView
+                android:id="@+id/button_close_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="X"
+                android:textColor="@color/dark_purple"
+                android:textSize="@dimen/text_header_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/all_province"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

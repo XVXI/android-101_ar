@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar_main2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ชื่อ-สกุล"
+                                android:textSize="@dimen/text_normal_size" />
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/text_normal_size" />
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textSize="@dimen/text_normal_size" />
+                        </LinearLayout>
+
+                        <com.transcode.smartcity101p2.view.KanitEditTextView
+                            android:id="@+id/text_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_textbox_bg"
+                            android:padding="5dp"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="โทรศัพท์"
+                                android:textSize="@dimen/text_normal_size" />
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/text_normal_size" />
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textSize="@dimen/text_normal_size" />
+                        </LinearLayout>
+
+                        <com.transcode.smartcity101p2.view.KanitEditTextView
+                            android:id="@+id/text_tel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_textbox_bg"
+                            android:inputType="phone"
+                            android:padding="5dp"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="รายละเอียดที่อยู่ (บ้านเลขที่,ตึก,ชื่อถนน)"
+                                android:textSize="@dimen/text_normal_size" />
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="*"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/text_normal_size" />
+
+                            <com.transcode.smartcity101p2.view.KanitTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textSize="@dimen/text_normal_size" />
+                        </LinearLayout>
+
+                        <com.transcode.smartcity101p2.view.KanitEditTextView
+                            android:id="@+id/text_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rounded_corner_textbox_bg"
+                            android:gravity="top|left"
+                            android:minLines="3"
+                            android:padding="5dp"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/def"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:text="ตั้งเป็นที่อยู่ตั้งต้น"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <com.transcode.smartcity101p2.view.KanitTextView
+                    android:id="@+id/del"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="ลบที่อยู่"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_header_size" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.transcode.smartcity101p2.view.KanitTextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/market_pink"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="ยืนยัน"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ooo_bg3">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/appbar_main2" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.transcode.smartcity101p2.view.KanitTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_register_text"
+                    android:textSize="@dimen/text_header_size"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rounded_corner_textbox_bg" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/register_name_text"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textSize="@dimen/text_normal_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/rounded_corner_textbox_bg" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/register_lastname_text"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:minHeight="40dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textSize="@dimen/text_normal_size" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corner_bg_market_light_green"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/sp_text1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_header_size"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextBoldView
+                        android:id="@+id/select_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/selectplace_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_header_size"
+                        android:textStyle="bold" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/sp_text1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_header_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userDetailcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_account_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_header_size" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_corner_textbox_bg" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/register_email_text"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textSize="@dimen/text_normal_size" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_corner_textbox_bg" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/register_password_text"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textSize="@dimen/text_normal_size" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_corner_textbox_bg" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/repassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/register_repassword_text"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:minHeight="40dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textSize="@dimen/text_normal_size" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/term_and_con_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.transcode.smartcity101p2.view.SukhumvitTextView
+                        android:id="@+id/term_and_con_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_term_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal_size" />
+                </LinearLayout>
+
+                <com.transcode.smartcity101p2.view.KanitTextBoldView
+                    android:id="@+id/register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_button_bg_brown_new"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/register_register_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_button_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/icon_logo_tc_new" />
+</FrameLayout>

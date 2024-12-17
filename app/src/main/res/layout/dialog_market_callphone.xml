@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/rounded_corner_market_callphone_header_purple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/dl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/market_icon_tel" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/dl_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/store_string_store_contract"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_max_header_size" />
+
+            <com.transcode.smartcity101p2.view.KanitTextBoldView
+                android:id="@+id/dl_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/text_max_header_size" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/dl_ok"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_market_callphone_bt_ok_purple"
+            android:gravity="center"
+            android:text="@string/ok_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_button_size"
+            android:textStyle="bold" />
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/dl_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_market_callphone_bt_cancel_red"
+            android:gravity="center"
+            android:text="@string/cancel_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_button_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

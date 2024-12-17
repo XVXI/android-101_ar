@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_corner_market_callphone_header_green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/market_yellow_bg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.transcode.smartcity101p2.view.KanitEditTextView
+            android:id="@+id/dl_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="Address"
+            android:minLines="5"
+            android:text="test address"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold" />
+
+        <com.transcode.smartcity101p2.view.KanitEditTextView
+            android:id="@+id/dl_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="Tel"
+            android:inputType="phone"
+            android:lines="1"
+            android:text="1234567890"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_header_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/dl_ok"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_market_callphone_bt_ok_green"
+            android:gravity="center"
+            android:text="@string/ok_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_button_size"
+            android:textStyle="bold" />
+
+        <com.transcode.smartcity101p2.view.KanitTextView
+            android:id="@+id/dl_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_market_callphone_bt_cancel_red"
+            android:gravity="center"
+            android:text="@string/cancel_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_button_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

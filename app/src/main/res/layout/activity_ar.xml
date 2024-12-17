@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/appbar_main2" />
+
+        <LinearLayout
+            android:id="@+id/menu_horwote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/ar_purple"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/info"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/icon_ar_info" />
+
+                <ImageView
+                    android:id="@+id/gif"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/icon_ar_gif" />
+
+                <ImageView
+                    android:id="@+id/video"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/icon_ar_video" />
+
+                <ImageView
+                    android:id="@+id/web_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/icon_ar_home" />
+
+                <ImageView
+                    android:id="@+id/web_fb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/icon_ar_fb" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/map_h"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_ar_map2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

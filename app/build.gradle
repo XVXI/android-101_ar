@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+
+
+    signingConfigs {
+        config {
+            keyAlias 'debug'
+            keyPassword 'debugkey'
+            storeFile file('debug')
+            storePassword 'debugkey'
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.transcode.smartcity101p2"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 99
+        versionName "1.98"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    flavorDimensions "release"
+    productFlavors {
+        flavorDevelop {
+            buildConfigField "String", "BASE_URL", '\"https://retsm-market-api-citizen-retsm-market-api-citizen-qa.azurewebsites.net\"'
+            buildConfigField "String", "MARKETS_URL", '\"https://retsm-market-app-citizen-qa.azurewebsites.net\"'
+            buildConfigField "String", "FIREBASE_STAGE", '\"QA_\"'
+            buildConfigField "String", "ENV", '\"D\"'
+        }
+        flavorQA {
+            buildConfigField "String", "BASE_URL", '\"https://retsm-market-api-citizen-retsm-market-api-citizen-qa.azurewebsites.net\"'
+            buildConfigField "String", "MARKETS_URL", '\"https://retsm-market-app-citizen-qa.azurewebsites.net\"'
+            buildConfigField "String", "FIREBASE_STAGE", '\"QA_\"'
+            buildConfigField "String", "ENV", '\"Q\"'
+        }
+        flavorProduction {
+            buildConfigField "String", "BASE_URL", '\"https://retsm-market-api-citizen.azurewebsites.net\"'
+            buildConfigField "String", "MARKETS_URL", '\"https://retsm-market-app-citizen.azurewebsites.net\"'
+            buildConfigField "String", "FIREBASE_STAGE", '\"PROD_\"'
+            buildConfigField "String", "ENV", '\"R\"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+
+allprojects {
+    repositories {
+        maven { url 'https://mapbox.bintray.com/mapbox' }
+    }
+}
+
+dependencies {
+    String supportLibVersion = "27.1.0"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation "com.android.support:design:${supportLibVersion}"
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation:0.37.0'
+    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0') {
+        exclude group: 'group_name', module: 'module_name'
+    }
+    implementation ('com.google.firebase:firebase-core:16.0.6'){
+        exclude module: "play-services-ads-identifier"
+    }
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.5'
+
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+
+    implementation 'com.google.ar:core:1.5.0'
+    implementation project(path: ':wikitude-sdk')
+    implementation project(path: ':plugins')
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

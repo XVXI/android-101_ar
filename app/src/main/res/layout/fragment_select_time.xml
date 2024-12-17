@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/appbar_main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner_textbox_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="เลือกเวลาที่ต้องการ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="จองแล้วไม่สามารถยกเลิกได้"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="กรุณาตรวจสอบความถูกต้องก่อนทำการจอง"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="วันที่จองใช้บริการ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:id="@+id/dateSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_header_size"
+                    android:textStyle="bold" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="ระบุเวลา"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <com.transcode.smartcity101p2.view.SukhumvitTextView
+                    android:id="@+id/selecttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner_textbox_bg"
+                    android:gravity="center"
+                    android:text="_ _ : _ _"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_header_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_corner_button_bg_darkblue"
+                android:gravity="center"
+                android:text="ต่อไป"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_header_size"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

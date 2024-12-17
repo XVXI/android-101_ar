@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar_main" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/about_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/about_ooo_cover" />
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:id="@+id/about_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/black" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.transcode.smartcity101p2.view.KanitTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="ติดต่อเรา"
+                        android:textColor="@color/dark_purple"
+                        android:textSize="@dimen/text_header_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="ที่ตั้ง : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/about_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="258 ถ.เทวาภิบาล ต.ในเมือง อ.เมือง จ.ร้อยเอ็ด 45000"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="โทรศัพท์ : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/about_hotline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="043-511222"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="โทรสาร : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:id="@+id/about_web"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="043-513394"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="อีเมล : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="muni101@roietmunicipal.go.th"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="เว็ปไซต์ : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="https://roietmunicipal.go.th/roite/"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/icon_location_new" />
+
+                        <com.transcode.smartcity101p2.view.KanitTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="ตำแหน่ง พิกัดที่ตั้งแผนที่"
+                            android:textColor="@color/dark_purple"
+                            android:textSize="@dimen/text_header_size" />
+                    </LinearLayout>
+
+                    <com.mapbox.mapboxsdk.maps.MapView
+                        android:id="@+id/mapview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        mapbox:mapbox_cameraZoom="13" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/half_circle_purple"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_101" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_logo_tc_new" />
+        </LinearLayout>
+
+        <com.transcode.smartcity101p2.view.KanitTextBoldView
+            android:id="@+id/version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/black" />
+    </FrameLayout>
+</LinearLayout>
